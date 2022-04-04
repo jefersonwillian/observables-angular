@@ -51,7 +51,7 @@ export class ColdObservablesComponent implements OnInit {
       }
     );
 
-       this.s2 = 'Waiting for interval... ';
+    this.s2 = 'Waiting for interval... ';
     setInterval(() => {
       this.subscription2 = myIntervalObservable.subscribe(
         (_n) => {
@@ -64,7 +64,7 @@ export class ColdObservablesComponent implements OnInit {
           this.s2 = 'Completed';
         }
       );
-   }, 3000)
+    }, 3000);
 
     setTimeout(() => {
       this.subscription1.unsubscribe();
